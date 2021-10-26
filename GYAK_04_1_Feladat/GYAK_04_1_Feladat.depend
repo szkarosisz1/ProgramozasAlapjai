@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1632753742 source:d:\szilárd\egyetem\tantárgyak\1. félév\programozás alapjai\c\gyakorlat\gyak_04_1_feladat\main.c
+	<stdio.h>
+	<stdlib.h>
+
