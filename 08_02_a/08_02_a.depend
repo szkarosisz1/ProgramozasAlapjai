@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1635266596 source:d:\szilárd\egyetem\tantárgyak\1. félév\programozás alapjai\c\gyakorlat\8. gyakorlat\08_02_a\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
