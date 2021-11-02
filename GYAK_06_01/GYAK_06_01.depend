@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1634306945 source:d:\szilárd\egyetem\tantárgyak\1. félév\programozás alapjai\c\gyakorlat\6. gyakorlas (keresés és sztringkezelés)\gyak_06_01\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
