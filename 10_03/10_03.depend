@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636301568 source:d:\szilárd\egyetem\tantárgyak\1. félév\programozás alapjai\c\gyakorlat\10. gyakorlat (struktúrák)\10_03\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
