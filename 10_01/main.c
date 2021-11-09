@@ -40,17 +40,17 @@ void kiir(Datum d){
 Datum regebbi_datum(Datum d1, Datum d2){
         if(d1.ev==d2.ev){
             if(d1.ho==d2.ho){
-                if(d1.nap >=d2.nap)
+                if(d1.nap >= d2.nap)
                     return d2;
                 else
                     return d1;
             }
-            else if(d1.ho>d2.ho)
+            else if(d1.ho > d2.ho)
                 return d2;
             else
                 return d1;
         }
-        else if(d1.ev>d2.ev)
+        else if(d1.ev > d2.ev)
             return d2;
         else
             return d1;
