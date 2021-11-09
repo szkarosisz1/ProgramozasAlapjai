@@ -2,28 +2,31 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Egy geometriai programban körök adatait kell tárolni: középpont (x, y koordináta) és sugár.
-//Állapítsa meg két körrõl, hogy azok átfedik-e egymást.
-//Két kör akkor van átfedésben, ha középpontjaik távolsága kisebb, mint a sugaraik összege (Pitagorasz-tétel).
+// Egy geometriai programban kÃ¶rÃ¶k adatait kell tÃ¡rolni: kÃ¶zÃ©ppont (x, y koordinÃ¡ta) Ã©s sugÃ¡r.
+//ÃllapÃ­tsa meg kÃ©t kÃ¶rrÅ‘l, hogy azok Ã¡tfedik-e egymÃ¡st.
+//KÃ©t kÃ¶r akkor van Ã¡tfedÃ©sben, ha kÃ¶zÃ©ppontjaik tÃ¡volsÃ¡ga kisebb, mint a sugaraik Ã¶sszege (Pitagorasz-tÃ©tel).
 
 typedef struct kor{
         double x, y, r;
 }Kor;
 
 void beolvas(Kor *k){
+    printf("Kerem a kor adatait (x y r formaban)");
     scanf("%lf%lf%lf",&k->x,&k->y,&k->r);
     return ;
 }
 
 int atfed(Kor k1, Kor k2){
-    return sqrt(pow(k1.x - k2.x,2)+pow(k1.y - k2.y,2))<k1.r+k2.r;
+    return sqrt(pow(k1.x - k2.x,2)+pow(k1.y - k2.y,2)) < k1.r+k2.r;
 }
 
 int main(void)
 {
     Kor a, b;
+        
     beolvas(&a);
     beolvas(&b);
+        
     printf("%s\n", atfed(a, b) ? "Atfedik egymast" : "Nem fedik at egymast.");
     return 0;
 }
