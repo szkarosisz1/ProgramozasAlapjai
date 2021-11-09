@@ -33,7 +33,7 @@ void beolvas(Datum *d){
 }
 
 void kiir(Datum d){
-        printf("Regebbi: %d. %d. %d.\n",d.ev,d.ho,d.nap);
+        printf("A korabbi datum: %d. %d. %d.\n",d.ev,d.ho,d.nap);
         return ;
 }
 
