@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//1. Defini·ljon d·tum tÌpust. Olvasson be kÈt d·tumot, Ès hat·rozza meg melyik a rÈgebbi.
+//1. Defini√°ljon d√°tum t√≠pust. Olvasson be k√©t d√°tumot, √©s hat√°rozza meg melyik a r√©gebbi.
 
 typedef struct datum {
 
@@ -33,7 +33,7 @@ void beolvas(Datum *d){
 }
 
 void kiir(Datum d){
-        printf("Regebbi:%d.%d.%d.\n",d.ev,d.ho,d.nap);
+        printf("Regebbi: %d. %d. %d.\n",d.ev,d.ho,d.nap);
         return ;
 }
 
