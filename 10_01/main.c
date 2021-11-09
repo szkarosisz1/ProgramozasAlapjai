@@ -16,18 +16,27 @@ Datum regebbi_datum(Datum d1, Datum d2);
 
 int main()
 {
-        Datum d1,d2;
+        Datum d1, d2;
+            
         printf("Elso datum:\n"); beolvas(&d1);
         printf("Masodik datum:\n"); beolvas(&d2);
+            
         Datum regi = regebbi_datum(d1,d2);
         kiir(regi);
+            
         return 0;
 }
 
 void beolvas(Datum *d){
-        printf("Ev: "); scanf("%d",&d->ev);
-        printf("Ho: "); scanf("%d",&d->ho);
-        printf("Nap: "); scanf("%d",&d->nap);
+        printf("Ev: "); 
+        scanf("%d",&d->ev);
+            
+        printf("Ho: "); 
+        scanf("%d",&d->ho);
+            
+        printf("Nap: ");
+        scanf("%d",&d->nap);
+            
         return ;
 
 }
@@ -54,6 +63,19 @@ Datum regebbi_datum(Datum d1, Datum d2){
             return d2;
         else
             return d1;
+}
+
+void beolvasottFormazott (Datum *d) {
+    char str[12];
+    int ok;
+    do {
+          ok = 1;   
+          scanf("%s",str);
+                
+          if(sscanf(str, "%d. %d. %d.",&d->ev, &d->ho, &d->nap) != 3)
+                      printf("Hibas a datum!");
+           
+    }
 }
 
 
